@@ -1,0 +1,27 @@
+[0] welcome to lk
+
+[0] SCM call: 0x2000601 failed with :fffffffc
+[0] Failed to initialize SCM
+[10] platform_init()
+[10] target_init()
+[60] MMC card: 016GE2 (0.0, 01 2007), manufacturer: 11, OEM: 100, capacity: 15758000128 bytes
+[70] SDHC Running in HS400 mode
+[70] Done initialization of the card
+[80] lk2nd_init()
+[80] Booted @ 0x8000, r0=0x0, r1=0x0, r2=0x1e00000
+[80] Found valid DTB with 17867 bytes total
+[90] Command line from previous bootloader: lk2nd androidboot.emmc=true androidboot.serialno=945366c0 androidboot.hwversion=40 syspart=system  bl_version=1.0 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_jdi_fhd_cmd_95
+[110] Failed to read 'lk2nd,dtb-files': -1
+[110] Detected device: Xiaomi Mi 4 (compatible: xiaomi,cancro)
+[120] keys: 2 keymap overrides applied
+[120] MDP continuous splash detected: pipe RGB_0, base: 0x3200000, stride: 3240, src: 1080x1920 (0,0), img: 1080x1920, out: 1080x1920 (0,0), format: 0x2243f (bpp: 3)
+[130] Display refresh: cmd mode: 1, auto refresh: 0 (sel: 0x21f20)
+[140] scm call to check secure boot fuses failed
+[150] fastboot_init()
+[610] fastboot: processing commands
+[630] fastboot: getvar:product
+[1130] fastboot: getvar:version
+[1630] fastboot: getvar:version-bootloader
+[2130] fastboot: getvar:serialno
+[2640] fastboot: getvar:secure
+[18570] fastboot: oem log

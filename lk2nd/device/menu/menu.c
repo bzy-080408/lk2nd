@@ -186,7 +186,7 @@ void display_fastboot_menu(void)
 
 	scale_factor += 1;
 	incr = FONT_HEIGHT * scale_factor;
-	fbcon_puts_ln(WHITE, y, incr, true, xstr(BOARD));
+	fbcon_puts_ln(WHITE, y, incr, true, "Klipper Bootloader");
 
 	scale_factor = old_scale;
 	incr = FONT_HEIGHT * scale_factor;
@@ -224,8 +224,7 @@ void display_fastboot_menu(void)
 	y = fb->height - 8 * incr;
 
 	fbcon_puts_ln(WHITE, y, incr, true, "About this device");
-
-
+	fbcon_printf_ln(SILVER, y, incr, false, " Author: QemuAndroid");
 	if (lk2nd_dev.panel.name)
 		fbcon_printf_ln(SILVER, y, incr, false, " Panel:  %s", lk2nd_dev.panel.name);
 	if (lk2nd_dev.battery)
@@ -299,7 +298,8 @@ void display_default_image_on_screen(void)
 
 	fbcon_clear_msg(y / FONT_HEIGHT, y / FONT_HEIGHT + 3 * scale_factor);
 
-	fbcon_puts_ln(WHITE, y, incr, true, xstr(BOARD));
+	fbcon_puts_ln(WHITE, y, incr, true, "Klipper Bootloader");
+	fbcon_puts_ln(SILVER, y, incr, true, "Author: QemuAndroid");
 	fbcon_puts_ln(SILVER, y, incr, true, LK2ND_VERSION);
 	fbcon_flush();
 }
